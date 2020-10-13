@@ -1,0 +1,11 @@
+build:
+    stage: build
+    image:
+        name: gcr.io/kaniko-project/executor:debug
+        entrypoint: [""]
+    script:
+        - echo "{\"credsStore\":\"ecr-login\",\"credHelpers\":{\"$AWS_ACCOUNT_ID.dkr.ecr.region.amazonaws.com\":\"ecr-login\"}}" > /kaniko/.docker/config.json
+        - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $AWS_REPOSITORY:$CI_COMMIT_TAG
+    only:
+        # Only push to ECR when we tag the commit via the GIT
+        - tags

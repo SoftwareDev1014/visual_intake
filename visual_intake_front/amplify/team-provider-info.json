@@ -1,0 +1,22 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-visualintake-dev-215217-authRole",
+            "UnauthRoleArn": "arn:aws:iam::261311016659:role/amplify-visualintake-dev-215217-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::261311016659:role/amplify-visualintake-dev-215217-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-visualintake-dev-215217-deployment",
+            "UnauthRoleName": "amplify-visualintake-dev-215217-unauthRole",
+            "StackName": "amplify-visualintake-dev-215217",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:261311016659:stack/amplify-visualintake-dev-215217/2e1055e0-bba2-11ea-9005-06abab1199f8",
+            "AmplifyAppId": "dmku4k3fp94mc"
+        },
+        "categories": {
+            "auth": {
+                "visualintake15517fd2": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"909661914386-d639h1akhddtbsstak652r8hlhl5uod9.apps.googleusercontent.com\",\"client_secret\":\"APoWRkpNvgCnP-1H2bL0n47X\"}]"
+                }
+            }
+        }
+    }
+}

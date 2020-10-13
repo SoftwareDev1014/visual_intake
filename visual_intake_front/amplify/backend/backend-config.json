@@ -1,0 +1,16 @@
+{
+    "auth": {
+        "visualintake15517fd2": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    },
+    "storage": {
+        "visualintakestore": {
+            "service": "S3",
+            "providerPlugin": "awscloudformation"
+        }
+    }
+}
